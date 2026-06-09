@@ -1,0 +1,28 @@
+SOURCE: Medium (@plengchanokw) — "My Year in Review at Carnegie Mellon [MISM BIDA]" (first-person Heinz MISM / BIDA student)
+URL: https://medium.com/@plengchanokw/my-year-in-review-at-carnegie-mellon-mism-bida-d90747766296
+TYPE: student_blog
+COLLECTED: 2026-06-09
+NOTE: Verbatim excerpts of per-course / per-professor opinions. Replaces the original Reddit #10, which Claude Code cannot fetch (reddit.com is blocked).
+---
+Applied Econometrics (Prof. Edson Severnini) — rated 5 stars:
+"Of all the classes I have taken this semester, I would say this is the most practical and my favorite one."
+
+Object Oriented Programming in Java (Prof. Martin Barrett) — rated 4 stars:
+"This is the class that gets me up in the morning every Monday and Wednesday, with no exception."
+Workload: "23 labs in total. There are three homework, three midterms, and one cumulative final exam."
+
+Measuring Social (Prof. Ari Lightman) — rated 2 stars:
+"This class was 12 units, so RIP to my GPA... I was disappointed and quite frankly, embarrassed about my standard that I betrayed."
+On poor teamwork and lack of professor support: his answer "went from 'Let me try to talk to them' to 'Look, you'll just have to work with what you have'."
+
+Statistics (Prof. Eli Ben-Michael):
+"Eli taught this class so passionately that it was a thoroughly enjoyable experience."
+
+Unstructured Data Analytics (Prof. George Chen):
+"if you miss one you can easily miss the rest... probably amazing as a researcher but not so much as a teacher."
+
+On Python coursework workload:
+"Each homework felt like Python project that would take days to complete."
+
+Final advice to prospective students:
+"Your experience at CMU is what you make out of it... The most important thing is what you learned at the end of the day."

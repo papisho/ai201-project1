@@ -14,6 +14,14 @@
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
 
+This Unofficial Guide covers student-written reviews of professors and courses at Carnegie
+Mellon's Heinz College (MISM, MSPPM, and MPM tracks) and the cross-listed School of Computer
+Science courses that Heinz graduate students take. Official course catalogs list topics and
+prerequisites but reveal nothing about teaching style, grading harshness, workload, or whether
+a professor's lectures are actually worth attending — exactly what students weigh before they
+register. That knowledge lives scattered and anonymized across RateMyProfessors, program-review
+sites, and student blogs; this system makes it searchable and answerable, with citations.
+
 ---
 
 ## Document Sources
@@ -24,16 +32,16 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | RateMyProfessors — Raja Sooriamurthi (Heinz, IS) | professor_review | https://www.ratemyprofessors.com/professor/1753353 → `documents/rmp_sooriamurthi.txt` |
+| 2 | RateMyProfessors — Stacy Rosenberg (Heinz, Writing/Policy core) | professor_review | https://www.ratemyprofessors.com/professor/2146454 → `documents/rmp_rosenberg.txt` |
+| 3 | RateMyProfessors — Beibei Li (Heinz, IT Management) | professor_review | https://www.ratemyprofessors.com/professor/1939662 → `documents/rmp_li.txt` |
+| 4 | RateMyProfessors — Alessandro Acquisti (Heinz, IS) | professor_review | https://www.ratemyprofessors.com/professor/802198 → `documents/rmp_acquisti.txt` |
+| 5 | RateMyProfessors — Anand Ramachandran (SCS, CS) | professor_review | https://www.ratemyprofessors.com/professor/2814031 → `documents/rmp_ramachandran.txt` |
+| 6 | Niche — Heinz College reviews | program_review | https://www.niche.com/graduate-schools/heinz-college-of-information-systems-and-public-policy/reviews/ → `documents/niche_heinz.txt` |
+| 7 | GradReports — Carnegie Mellon University | program_review | https://www.gradreports.com/colleges/carnegie-mellon-university → `documents/gradreports_cmu.txt` |
+| 8 | Student blog — MISM retrospective | student_blog | https://blog.dalanmiller.com/a-retrospective-as-a-master-of-information-systems-management/ → `documents/blog_mism_retrospective.txt` |
+| 9 | Quora — best CS courses for MISM | forum_thread | https://www.quora.com/What-are-the-best-CS-courses-at-CMU-for-someone-in-the-Heinz-Colleges-MISM-program → `documents/quora_best_cs_courses_mism.txt` |
+| 10 | Medium — MISM/BIDA year in review | student_blog | https://medium.com/@plengchanokw/my-year-in-review-at-carnegie-mellon-mism-bida-d90747766296 → `documents/medium_mism_year_review.txt` |
 
 ---
 

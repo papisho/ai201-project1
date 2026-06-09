@@ -1,0 +1,21 @@
+SOURCE: Blog (blog.dalanmiller.com) — "A Retrospective as a Master of Information Systems Management" (CMU Heinz MISM alumnus)
+URL: https://blog.dalanmiller.com/a-retrospective-as-a-master-of-information-systems-management/
+TYPE: student_blog
+COLLECTED: 2026-06-09
+NOTE: Verbatim excerpts from a longer first-person retrospective by a Heinz MISM graduate. Replaces the original Quora #8, which was inaccessible (403).
+---
+On the program experience:
+"the MISM program didn't make me a specialist in anything, which admittedly I kind of wanted to be, but in reality just introduced me to more concepts than I had ever seen before."
+"The truth of the matter is that these things are now all possible, where before I felt they were slightly out of reach."
+
+On workload:
+"the coursework was hard. Especially once I get to Pittsburgh. It was day-in day-out of walking to campus staying there till all the daylight hours were gone, walking home, and then working till midnight."
+
+On value and whether it's worth it:
+"You just shouldn't trust one source of information especially with one that has such a high price tag."
+(The author stresses caution given the program's cost and financial risk, particularly for international students without access to U.S. loans.)
+
+Advice to prospective students:
+On career services: "Career Services will not get you a job and it's not their job to do so...you have to find it."
+On the capstone: "I was quite jealous later to hear about all the interesting technical projects offered by the 'vanilla' capstone project program from Heinz."
+On balance: "it's definitely a slippery slope when you decide to 'work' every hour of your precious weekend."

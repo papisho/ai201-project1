@@ -1,0 +1,13 @@
+SOURCE: RateMyProfessors — Beibei Li (CMU Heinz College, Business / IT Management)
+URL: https://www.ratemyprofessors.com/professor/1939662
+TYPE: professor_review
+COLLECTED: 2026-06-09
+OVERALL_QUALITY: 2.3/5
+DIFFICULTY: 3.5/5
+WOULD_TAKE_AGAIN: 0%
+---
+[Course BIDM94832 | Nov 26, 2019 | Quality 2.0 | Difficulty 3.0]
+Her lecture is basically just reading slides while asking some weird uninspired questions.
+
+[Course ISM95797 | May 4, 2016 | Quality 2.5 | Difficulty 4.0]
+Was quite boring.

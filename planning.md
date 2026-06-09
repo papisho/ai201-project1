@@ -11,6 +11,14 @@
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
 
+This Unofficial Guide covers student-written reviews of professors and courses at Carnegie
+Mellon's Heinz College (MISM, MSPPM, and MPM tracks) and the cross-listed School of Computer
+Science courses that Heinz graduate students take. Official course catalogs list topics and
+prerequisites but reveal nothing about teaching style, grading harshness, workload, or whether
+a professor's lectures are actually worth attending — exactly what students weigh before they
+register. That knowledge lives scattered and anonymized across RateMyProfessors, program-review
+sites, and student blogs; this system makes it searchable and answerable, with citations.
+
 ---
 
 ## Documents
@@ -20,16 +28,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | RateMyProfessors | Raja Sooriamurthi (Heinz, Information Systems) — 4 reviews, 4.8/5, positive | `documents/rmp_sooriamurthi.txt` |
+| 2 | RateMyProfessors | Stacy Rosenberg (Heinz, Writing/Policy core) — 4 reviews, 1.3/5, very negative | `documents/rmp_rosenberg.txt` |
+| 3 | RateMyProfessors | Beibei Li (Heinz, IT Management) — 2 reviews, 2.3/5, negative | `documents/rmp_li.txt` |
+| 4 | RateMyProfessors | Alessandro Acquisti (Heinz, Information Systems) — 5 reviews, 4.7/5, positive | `documents/rmp_acquisti.txt` |
+| 5 | RateMyProfessors | Anand Ramachandran (SCS, Computer Science) — 5 reviews, 2.3/5, brutal grader | `documents/rmp_ramachandran.txt` |
+| 6 | Niche | Heinz College program reviews — 8 MPM/policy student reviews | `documents/niche_heinz.txt` |
+| 7 | GradReports | Carnegie Mellon alumni reviews — 20 program reviews | `documents/gradreports_cmu.txt` |
+| 8 | Student blog (dalanmiller.com) | MISM grad retrospective — program, workload, career services | `documents/blog_mism_retrospective.txt` |
+| 9 | Quora | "Best CS courses for a MISM student" course guide (contains some factual errors — kept intentionally) | `documents/quora_best_cs_courses_mism.txt` |
+| 10 | Medium (@plengchanokw) | MISM/BIDA year-in-review — 5 named-professor course reviews | `documents/medium_mism_year_review.txt` |
 
 ---
 
