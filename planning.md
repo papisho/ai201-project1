@@ -86,7 +86,10 @@ corpus while the 512-token cap protects against the few long documents.
 
 **Estimated final chunk count:** ≈ 60–70 chunks (≈18 from GradReports, ~20 from the five RMP
 files, 8 from Niche, ~7 from the Medium course reviews, ~5 from the blog, and ~6–8 from the
-sub-split Quora guide). Exact count to be confirmed in Milestone 3.
+sub-split Quora guide). **Confirmed in Milestone 3: 69 chunks** (19 GradReports, 11 Quora,
+8 Niche, 7 Medium, 5 Acquisti, 5 Ramachandran, 4 each Sooriamurthi/Rosenberg/blog, 2 Li),
+min 17 / avg 354 / max 1881 chars — no oversized blocks, so the fallback splitter was not
+triggered on this corpus.
 
 ---
 
