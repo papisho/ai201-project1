@@ -26,18 +26,18 @@ sites, and student blogs; this system makes it searchable and answerable, with c
 <!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
      Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
 
-| # | Source | Description | URL or location |
-|---|--------|-------------|-----------------|
-| 1 | RateMyProfessors | Raja Sooriamurthi (Heinz, Information Systems) — 4 reviews, 4.8/5, positive | `documents/rmp_sooriamurthi.txt` |
-| 2 | RateMyProfessors | Stacy Rosenberg (Heinz, Writing/Policy core) — 4 reviews, 1.3/5, very negative | `documents/rmp_rosenberg.txt` |
-| 3 | RateMyProfessors | Beibei Li (Heinz, IT Management) — 2 reviews, 2.3/5, negative | `documents/rmp_li.txt` |
-| 4 | RateMyProfessors | Alessandro Acquisti (Heinz, Information Systems) — 5 reviews, 4.7/5, positive | `documents/rmp_acquisti.txt` |
-| 5 | RateMyProfessors | Anand Ramachandran (SCS, Computer Science) — 5 reviews, 2.3/5, brutal grader | `documents/rmp_ramachandran.txt` |
-| 6 | Niche | Heinz College program reviews — 8 MPM/policy student reviews | `documents/niche_heinz.txt` |
-| 7 | GradReports | Carnegie Mellon alumni reviews — 20 program reviews | `documents/gradreports_cmu.txt` |
-| 8 | Student blog (dalanmiller.com) | MISM grad retrospective — program, workload, career services | `documents/blog_mism_retrospective.txt` |
-| 9 | Quora | "Best CS courses for a MISM student" course guide (contains some factual errors — kept intentionally) | `documents/quora_best_cs_courses_mism.txt` |
-| 10 | Medium (@plengchanokw) | MISM/BIDA year-in-review — 5 named-professor course reviews | `documents/medium_mism_year_review.txt` |
+| #   | Source                         | Description                                                                                           | URL or location                            |
+| --- | ------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 1   | RateMyProfessors               | Raja Sooriamurthi (Heinz, Information Systems) — 4 reviews, 4.8/5, positive                           | `documents/rmp_sooriamurthi.txt`           |
+| 2   | RateMyProfessors               | Stacy Rosenberg (Heinz, Writing/Policy core) — 4 reviews, 1.3/5, very negative                        | `documents/rmp_rosenberg.txt`              |
+| 3   | RateMyProfessors               | Beibei Li (Heinz, IT Management) — 2 reviews, 2.3/5, negative                                         | `documents/rmp_li.txt`                     |
+| 4   | RateMyProfessors               | Alessandro Acquisti (Heinz, Information Systems) — 5 reviews, 4.7/5, positive                         | `documents/rmp_acquisti.txt`               |
+| 5   | RateMyProfessors               | Anand Ramachandran (SCS, Computer Science) — 5 reviews, 2.3/5, brutal grader                          | `documents/rmp_ramachandran.txt`           |
+| 6   | Niche                          | Heinz College program reviews — 8 MPM/policy student reviews                                          | `documents/niche_heinz.txt`                |
+| 7   | GradReports                    | Carnegie Mellon alumni reviews — 20 program reviews                                                   | `documents/gradreports_cmu.txt`            |
+| 8   | Student blog (dalanmiller.com) | MISM grad retrospective — program, workload, career services                                          | `documents/blog_mism_retrospective.txt`    |
+| 9   | Quora                          | "Best CS courses for a MISM student" course guide (contains some factual errors — kept intentionally) | `documents/quora_best_cs_courses_mism.txt` |
+| 10  | Medium (@plengchanokw)         | MISM/BIDA year-in-review — 5 named-professor course reviews                                           | `documents/medium_mism_year_review.txt`    |
 
 ---
 
@@ -76,9 +76,9 @@ OVERALL_QUALITY / DIFFICULTY / WOULD_TAKE_AGAIN / course / date fields parsed fr
 header. This guarantees that even an isolated retrieved chunk carries its citation and its
 rating context.
 
-**Reasoning / why these numbers fit:** Splitting *smaller* than a review (e.g., 200-char
+**Reasoning / why these numbers fit:** Splitting _smaller_ than a review (e.g., 200-char
 windows) would fragment a single coherent opinion across two chunks — a query like "is the
-class hard but rewarding?" would retrieve only half the sentiment. Splitting *larger* (merging
+class hard but rewarding?" would retrieve only half the sentiment. Splitting _larger_ (merging
 multiple reviewers, or two professors, into one chunk) would dilute retrieval precision: a
 query about Sooriamurthi could match a chunk that also contains Acquisti, and the LLM would get
 mixed context. Keeping the unit at one opinion maximizes precision for a short-text, opinion
@@ -111,12 +111,13 @@ contradicting opinions; **too many (k=15+)** drags in off-topic reviews, dilutes
 and raises token cost/latency without improving the answer. k=5 balances coverage and
 precision; I'll revisit it during evaluation.
 
-Semantic search works here because it matches on *meaning*, not exact words: a query about
+Semantic search works here because it matches on _meaning_, not exact words: a query about
 "easy grading" can retrieve a review that says "grading was easy and overall fun" **and** one
 that says "let everyone pass," even though they share few literal tokens.
 
 **Production tradeoff reflection:** If I deployed this for real users and cost were no object,
 I'd weigh:
+
 - **Accuracy on domain text:** a larger hosted model (OpenAI `text-embedding-3-large`, Voyage,
   or Cohere) would likely improve recall on nuanced sentiment. But the biggest accuracy gap
   here isn't the embedder — it's **exact identifiers** (course codes like `67-262`, `33-658`,
@@ -142,13 +143,13 @@ I'd weigh:
      is right or wrong. "What are good dining halls?" is too vague.
      "What do students say about wait times at [dining hall name] during lunch?" is testable. -->
 
-| # | Question | Expected answer |
-|---|----------|-----------------|
-| 1 | What do students say about Stacy Rosenberg's grading, and would they take her again? | Strongly negative: 1.3/5 overall, **0% would take again**. Complaints: taught only off PowerPoint, gave unclear/late assignment criteria, wouldn't let the TA help, "rigid" and "pretentious" grading. Several explicitly say "avoid Stacy." (Source: `rmp_rosenberg.txt`) |
-| 2 | How difficult is Anand Ramachandran's course 33-658, and how do students describe the grading? | Extremely difficult: **difficulty 5.0/5**, only 25% would take again. Called the "ultimate grade deflation course," **not graded on a curve**, harsh term-paper grading, **no partial credit on exams**, getting an A "practically impossible." Mixed sentiment — some still found it "rewarding" and the professor passionate. (Source: `rmp_ramachandran.txt`) |
-| 3 | Which professor do reviewers recommend instead of Stacy Rosenberg for the Heinz College core courses? | **Professor Hyatt** — one reviewer says "Take the other professor Hyatt for the Heinz College cores." (Source: `rmp_rosenberg.txt`) — tests precise single-fact retrieval. |
-| 4 | What programming course is recommended for a MISM student who has never coded before? | **15-110 / 15-112 (Intro to Programming)** — recommended "if you lack programming"; builds Python/C fluency and is the suggested first step in every track pathway. (Source: `quora_best_cs_courses_mism.txt`) |
-| 5 | Which professors in this collection have a perfect 100% "would take again" rating? | **Raja Sooriamurthi** and **Alessandro Acquisti** (both WOULD_TAKE_AGAIN: 100%). (Sources: `rmp_sooriamurthi.txt`, `rmp_acquisti.txt`) — **designated hard/failure-candidate:** this requires aggregating a metadata field across *two separate documents*, which top-k semantic similarity is not built to do. |
+| #   | Question                                                                                              | Expected answer                                                                                                                                                                                                                                                                                                                                                  |
+| --- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | What do students say about Stacy Rosenberg's grading, and would they take her again?                  | Strongly negative: 1.3/5 overall, **0% would take again**. Complaints: taught only off PowerPoint, gave unclear/late assignment criteria, wouldn't let the TA help, "rigid" and "pretentious" grading. Several explicitly say "avoid Stacy." (Source: `rmp_rosenberg.txt`)                                                                                       |
+| 2   | How difficult is Anand Ramachandran's course 33-658, and how do students describe the grading?        | Extremely difficult: **difficulty 5.0/5**, only 25% would take again. Called the "ultimate grade deflation course," **not graded on a curve**, harsh term-paper grading, **no partial credit on exams**, getting an A "practically impossible." Mixed sentiment — some still found it "rewarding" and the professor passionate. (Source: `rmp_ramachandran.txt`) |
+| 3   | Which professor do reviewers recommend instead of Stacy Rosenberg for the Heinz College core courses? | **Professor Hyatt** — one reviewer says "Take the other professor Hyatt for the Heinz College cores." (Source: `rmp_rosenberg.txt`) — tests precise single-fact retrieval.                                                                                                                                                                                       |
+| 4   | What programming course is recommended for a MISM student who has never coded before?                 | **15-110 / 15-112 (Intro to Programming)** — recommended "if you lack programming"; builds Python/C fluency and is the suggested first step in every track pathway. (Source: `quora_best_cs_courses_mism.txt`)                                                                                                                                                   |
+| 5   | Which professors in this collection have a perfect 100% "would take again" rating?                    | **Raja Sooriamurthi** and **Alessandro Acquisti** (both WOULD_TAKE_AGAIN: 100%). (Sources: `rmp_sooriamurthi.txt`, `rmp_acquisti.txt`) — **designated hard/failure-candidate:** this requires aggregating a metadata field across _two separate documents_, which top-k semantic similarity is not built to do.                                                  |
 
 ---
 
@@ -165,8 +166,8 @@ I'd weigh:
 
 2. **Cross-document / metadata aggregation questions.** Facts like ratings live in a per-file
    header, and questions such as "which professors have 100% would-take-again" (eval Q5) require
-   combining a field across multiple documents. Top-k similarity returns the *k most similar
-   single chunks*, not an aggregate — so these questions are expected to fail or be partial.
+   combining a field across multiple documents. Top-k similarity returns the _k most similar
+   single chunks_, not an aggregate — so these questions are expected to fail or be partial.
 
 3. **Mixed-sentiment professors produce one-sided answers.** Ramachandran has both 1-star
    ("worst professor ever") and 4-star ("extremely rewarding") reviews. If retrieval surfaces
@@ -175,7 +176,7 @@ I'd weigh:
 
 4. **Grounding risk from the intentionally-flawed Quora doc.** The Quora course guide contains
    some inaccurate course numbers/descriptions (kept on purpose). The system must present these
-   as *what a forum post claims*, with attribution, not repeat them as authoritative fact — a
+   as _what a forum post claims_, with attribution, not repeat them as authoritative fact — a
    test of how well grounding holds up.
 
 5. **Broken source attribution.** If the chunker fails to prepend each chunk's header metadata,
@@ -246,7 +247,7 @@ returned chunks come from the expected source files before adding any generation
 **Milestone 5 — Generation and interface:**
 Input: the **Grounded Response Generation** requirement plus the **Retrieval Approach** section.
 I'll ask Claude to implement `generate.py` — call Groq (Llama 3.x) with a system prompt that
-(a) restricts the answer to *only* the retrieved chunks, (b) instructs it to say it cannot
+(a) restricts the answer to _only_ the retrieved chunks, (b) instructs it to say it cannot
 answer when the context is insufficient, and (c) requires inline source attribution — and to
 build `app.py`, a Streamlit page with a query box that shows the grounded answer plus the cited
 source documents and the retrieved chunks. **Verification:** run eval Q5 (the aggregation

@@ -1,7 +1,7 @@
 # The Unofficial Guide — Project 1
 
 > **How to use this template:**
-> Complete each section *after* you've built and tested the corresponding part of your system.
+> Complete each section _after_ you've built and tested the corresponding part of your system.
 > Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
 > Every section below is required for submission. One-liners will not receive full credit.
 
@@ -30,18 +30,18 @@ sites, and student blogs; this system makes it searchable and answerable, with c
      Be specific: include URLs, subreddit names, forum thread titles, or file names.
      Aim for variety — sources that together cover different subtopics or perspectives. -->
 
-| # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | RateMyProfessors — Raja Sooriamurthi (Heinz, IS) | professor_review | https://www.ratemyprofessors.com/professor/1753353 → `documents/rmp_sooriamurthi.txt` |
-| 2 | RateMyProfessors — Stacy Rosenberg (Heinz, Writing/Policy core) | professor_review | https://www.ratemyprofessors.com/professor/2146454 → `documents/rmp_rosenberg.txt` |
-| 3 | RateMyProfessors — Beibei Li (Heinz, IT Management) | professor_review | https://www.ratemyprofessors.com/professor/1939662 → `documents/rmp_li.txt` |
-| 4 | RateMyProfessors — Alessandro Acquisti (Heinz, IS) | professor_review | https://www.ratemyprofessors.com/professor/802198 → `documents/rmp_acquisti.txt` |
-| 5 | RateMyProfessors — Anand Ramachandran (SCS, CS) | professor_review | https://www.ratemyprofessors.com/professor/2814031 → `documents/rmp_ramachandran.txt` |
-| 6 | Niche — Heinz College reviews | program_review | https://www.niche.com/graduate-schools/heinz-college-of-information-systems-and-public-policy/reviews/ → `documents/niche_heinz.txt` |
-| 7 | GradReports — Carnegie Mellon University | program_review | https://www.gradreports.com/colleges/carnegie-mellon-university → `documents/gradreports_cmu.txt` |
-| 8 | Student blog — MISM retrospective | student_blog | https://blog.dalanmiller.com/a-retrospective-as-a-master-of-information-systems-management/ → `documents/blog_mism_retrospective.txt` |
-| 9 | Quora — best CS courses for MISM | forum_thread | https://www.quora.com/What-are-the-best-CS-courses-at-CMU-for-someone-in-the-Heinz-Colleges-MISM-program → `documents/quora_best_cs_courses_mism.txt` |
-| 10 | Medium — MISM/BIDA year in review | student_blog | https://medium.com/@plengchanokw/my-year-in-review-at-carnegie-mellon-mism-bida-d90747766296 → `documents/medium_mism_year_review.txt` |
+| #   | Source                                                          | Type             | URL or file path                                                                                                                                      |
+| --- | --------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | RateMyProfessors — Raja Sooriamurthi (Heinz, IS)                | professor_review | https://www.ratemyprofessors.com/professor/1753353 → `documents/rmp_sooriamurthi.txt`                                                                 |
+| 2   | RateMyProfessors — Stacy Rosenberg (Heinz, Writing/Policy core) | professor_review | https://www.ratemyprofessors.com/professor/2146454 → `documents/rmp_rosenberg.txt`                                                                    |
+| 3   | RateMyProfessors — Beibei Li (Heinz, IT Management)             | professor_review | https://www.ratemyprofessors.com/professor/1939662 → `documents/rmp_li.txt`                                                                           |
+| 4   | RateMyProfessors — Alessandro Acquisti (Heinz, IS)              | professor_review | https://www.ratemyprofessors.com/professor/802198 → `documents/rmp_acquisti.txt`                                                                      |
+| 5   | RateMyProfessors — Anand Ramachandran (SCS, CS)                 | professor_review | https://www.ratemyprofessors.com/professor/2814031 → `documents/rmp_ramachandran.txt`                                                                 |
+| 6   | Niche — Heinz College reviews                                   | program_review   | https://www.niche.com/graduate-schools/heinz-college-of-information-systems-and-public-policy/reviews/ → `documents/niche_heinz.txt`                  |
+| 7   | GradReports — Carnegie Mellon University                        | program_review   | https://www.gradreports.com/colleges/carnegie-mellon-university → `documents/gradreports_cmu.txt`                                                     |
+| 8   | Student blog — MISM retrospective                               | student_blog     | https://blog.dalanmiller.com/a-retrospective-as-a-master-of-information-systems-management/ → `documents/blog_mism_retrospective.txt`                 |
+| 9   | Quora — best CS courses for MISM                                | forum_thread     | https://www.quora.com/What-are-the-best-CS-courses-at-CMU-for-someone-in-the-Heinz-Colleges-MISM-program → `documents/quora_best_cs_courses_mism.txt` |
+| 10  | Medium — MISM/BIDA year in review                               | student_blog     | https://medium.com/@plengchanokw/my-year-in-review-at-carnegie-mellon-mism-bida-d90747766296 → `documents/medium_mism_year_review.txt`                |
 
 ---
 
@@ -99,13 +99,13 @@ sites, and student blogs; this system makes it searchable and answerable, with c
      Be honest — a partially accurate or inaccurate result that you explain well is more
      valuable than a suspiciously perfect result. -->
 
-| # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| #   | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
+| --- | -------- | --------------- | ---------------------------- | ----------------- | ----------------- |
+| 1   |          |                 |                              |                   |                   |
+| 2   |          |                 |                              |                   |                   |
+| 3   |          |                 |                              |                   |                   |
+| 4   |          |                 |                              |                   |                   |
+| 5   |          |                 |                              |                   |                   |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -159,12 +159,12 @@ sites, and student blogs; this system makes it searchable and answerable, with c
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- _What I gave the AI:_
+- _What it produced:_
+- _What I changed or overrode:_
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- _What I gave the AI:_
+- _What it produced:_
+- _What I changed or overrode:_
